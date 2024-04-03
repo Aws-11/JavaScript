@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>fetch method to read data</h1>
+
+<div id="info"></div>
+<img src="" id="image">
+
+<script>
+    /*fetch("textFile.text").then((txt) =>{
+        return txt.text();
+    }).then((data)=>{
+        document.getElementById("info").innerHTML += data
+    })*/
+
+    // async function mak(){
+    //     const txt = await fetch("textFile.text");
+    //     const data = await txt.text();
+    //     document.getElementById("info").innerHTML= data
+    // }
+
+    // mak();
+
+
+    fetch("plus.png").then((promise) => {
+        return promise.blob();
+    }).then((uri) =>{
+        document.getElementById("image").src=URL.createObjectURL(data)
+    })
+
+
+
+</script>
+
+    
+</body>
+</html>

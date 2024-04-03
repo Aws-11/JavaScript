@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cover">
+            <div class="question">
+                <h1>Question-1</h1>
+                <img src="plus.png" alt="">
+                </div>
+            
+        
+                <div class="answer">
+                <h1>Answer-1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente autem accusamus deleniti doloribus illo tempora, perferendis ipsa nam repellat maxime qui impedit sed consequuntur harum soluta iste. Blanditiis, cumque quisquam.</p>
+                </div>
+        </div>
+    
+    </div>
+
+    <script>
+        const cover = document.querySelectorAll(".cover");
+        cover.forEach((items)=>{
+            items.addEventListener("click",()=>{
+                items.classList.toggle("show")
+            })
+            
+        
+    
+        })
+    </script>
+    
+</body>
+</html>

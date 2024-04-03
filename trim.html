@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+
+function trimStringWithLoop(str) {
+    let start = 0;
+    let end = str.length - 1;
+    console.log(end);
+
+
+    
+    while (str[start] === ' ' ) {
+        start++;
+    }
+
+    
+    while (str[end] === ' ' ) {
+        end--;
+    }
+
+ 
+    return str.substring(start, end + 1), console.log(end);
+}
+
+
+const originalString = "   Hello, world!    ";
+
+const trimmedString = trimStringWithLoop(originalString);
+let start = 0;
+let end = trimmedString.length - 1;
+console.log(end);
+console.log(trimmedString);
+
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showdata()">show data</button>
+    <div id="info" style="border: 2px solid black;"></div>
+
+
+    <!-- <ul id="info" style="background-color: yellow; color: black; border: 2px solid black; width: 350px;">
+    
+    </ul> -->
+
+    <script>
+
+        function showdata(){
+            var urlParm=new URLSearchParams(window.location.search);
+            var id =urlParm.get("idnum")
+            var name = urlParm.get("name")
+            var bill = urlParm.get("bill")
+
+            document.getElementById("info").innerHTML= id + " " + name + " " + bill
+
+            
+
+        }
+
+       
+       
+       
+       
+       
+       
+       
+       /* function showdata(){
+            var inputValue = document.getElementById("").value;
+            const li1 = document.createElement("li");
+            const text = document.createTextNode(inputValue)
+            li1.appendChild(text);
+
+            const ul= document.getElementById("info");
+            ul.appendChild(li1);
+
+        }*/
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array1 = [3, 7, 9, 2, 5];
+        let array2 =[1, 2, 3]
+        let array3 =[3, 4, 5]
+        let sorted_array = array1.sort();
+        document.write(sorted_array);
+        document.write("<br>");
+        let reverse_array = array1.reverse();
+        document.write(reverse_array);
+        document.write("<br>");
+        let index = reverse_array.indexOf(9);
+       
+        document.write("<br>");
+        document.write(index);
+
+        new_array = array2.concat(array3);
+        document.write("<br>");
+        document.write(new_array);
+        filterd_array = new_array.filter(myfunction);
+        function myfunction(value){
+            return value > 3;
+        }
+        document.write("<br>");
+        document.write(filterd_array)
+
+
+
+
+
+
+
+
+        
+    </script>
+
+
+    
+</body>
+</html>

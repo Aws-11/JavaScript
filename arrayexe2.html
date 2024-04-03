@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let names=["Aws", "Juri"]
+        names.forEach(name => console.log(name));
+        var counter=1;
+        while (true){
+            counter += 1;
+            let new_name= prompt("enter a name or type'exit' to stop");
+            if (new_name.toLowerCase() ==="exit"){
+                document.write("exiting");
+                break;
+            }
+            else if(counter>11){
+                document.write("you have reached the limit set for the list.");
+                break;
+            }
+            else if (names.some(function(name){
+                return name.toLowerCase() === new_name.toLowerCase();
+                
+            })){
+                document.write("name is in the list <br>");
+                counter-=1;
+            }
+            else{
+                names.push(new_name);
+            }
+        }
+            document.write("<br>");
+        document.write(names.sort());
+    </script>
+    
+</body>
+</html>
